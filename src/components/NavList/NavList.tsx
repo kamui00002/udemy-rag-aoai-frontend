@@ -1,7 +1,7 @@
 import React from "react";
 import {BsRocketTakeoff} from "react-icons/bs";
 import {FaRocket} from "react-icons/fa";
-import Navitem from "./Navitem";
+import NavItem from "./NavItem";
 
 interface NavItemType {
     id: number;
@@ -18,7 +18,7 @@ const NavList = () => {
     return (
         <div className="mt-12">
             {navItems.map((item) => (
-                <Navitem
+                <NavItem
                     label={item.label}
                     link={item.link}
                     icon={item.icon}
